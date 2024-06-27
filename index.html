@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section id="navbar">
+        <nav class="navbar">
+            <div class="container-fluid">
+              <h1 class="navbar-brand heading">SRM GPA Calculator</h1>
+            </div>
+          </nav>
+    </section>
+
+    <section id="form">
+    <form>
+        <table>
+            <thead>
+                <tr>
+                  <th scope="col">S No</th>
+                  <th scope="col">Credits</th>
+                  <th scope="col">Grade</th>
+                </tr>
+              </thead>
+              <tbody id="rowlist">
+                    <tr>
+                        <th scope="row">1</th>
+                        <td><input  id="credits" class="inputs" type="number" step="1" min="0" max="10"></td>
+                        <td>
+                            <select name="grade" id="grade" class="grades">
+                                <option value="O">O</option>
+                                <option value="A+">A+</option>
+                                <option value="A">A</option> 
+                                <option value="B+">B+</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                                <option value="W">W</option>
+                                <option value="*">*</option>
+                                <option value="Ab">Ab</option>
+                                <option value="I">I</option>
+                                <option value="F">F</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td><input  id="credits" class="inputs" type="number" step="1" min="0" max="10"></td>
+                        <td>
+                            <select name="grade" id="grade" class="grades">
+                                <option value="O">O</option>
+                                <option value="A+">A+</option>
+                                <option value="A">A</option> 
+                                <option value="B+">B+</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                                <option value="W">W</option>
+                                <option value="*">*</option>
+                                <option value="Ab">Ab</option>
+                                <option value="I">I</option>
+                                <option value="F">F</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td><input  id="credits" class="inputs" type="number" step="1" min="0" max="10"></td>
+                        <td>
+                            <select name="grade" id="grade" class="grades">
+                                <option value="O">O</option>
+                                <option value="A+">A+</option>
+                                <option value="A">A</option> 
+                                <option value="B+">B+</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                                <option value="W">W</option>
+                                <option value="*">*</option>
+                                <option value="Ab">Ab</option>
+                                <option value="I">I</option>
+                                <option value="F">F</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td><input  id="credits" class="inputs" type="number" step="1" min="0" max="10"></td>
+                        <td>
+                            <select name="grade" id="grade" class="grades">
+                                <option value="O">O</option>
+                                <option value="A+">A+</option>
+                                <option value="A">A</option> 
+                                <option value="B+">B+</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                                <option value="W">W</option>
+                                <option value="*">*</option>
+                                <option value="Ab">Ab</option>
+                                <option value="I">I</option>
+                                <option value="F">F</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5</th>
+                        <td><input  id="credits" class="inputs" type="number" step="1" min="0" max="10"></td>
+                        <td>
+                            <select name="grade" id="grade" class="grades">
+                                <option value="O">O</option>
+                                <option value="A+">A+</option>
+                                <option value="A">A</option> 
+                                <option value="B+">B+</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                                <option value="W">W</option>
+                                <option value="*">*</option>
+                                <option value="Ab">Ab</option>
+                                <option value="I">I</option>
+                                <option value="F">F</option>
+                            </select>
+                        </td>
+                    </tr>
+            </tbody>
+
+        </table> 
+            <button type="button" class="addcourse" onclick="createRow()">Add Course</button>
+            <div class="formcontrols">
+                <button type="button" class="submitbtn">Check GPA</button>
+                <button type="reset" class="resetbtn">Reset</button>
+            </div>
+    </form>
+    </section>
+
+    <p id="results">Type in your Credits and Grades to know your GPA. </p>
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
