@@ -28,8 +28,9 @@ let gradePointsMulCredit = [];
 
 let cgpa;
 
-function createRow() {
-    document.getElementById("rowlist").innerHTML+=`<tr>
+document.getElementById('addcourse').addEventListener("click",()=>{ 
+    const row = document.createElement("tr")
+    row.innerHTML = `
     <th scope="row">${iniCount}</th>
     <td><input  id="credits" class="inputs" type="number" step="1" min="0" max="10"></td>
     <td>
@@ -46,10 +47,10 @@ function createRow() {
         <option value="I">I</option>
         <option value="F">F</option>
         </select>
-    </td>
-</tr>`
+    </td>`
+    document.getElementById("rowlist").appendChild(row)
 iniCount++;
-}
+})
 
 document.getElementsByClassName("submitbtn")[0].addEventListener("click", ()=> {
     let numberOfInputs = document.getElementsByClassName("inputs").length;
